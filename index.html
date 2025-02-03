@@ -1,44 +1,25 @@
-<html>
-<head>
-<title>Registration Form</title>
-<body style="background-image: url('R.jpg');">
-    <script>
-        function savedata(){
-            let username = document.getElementById("mail").value;
-            let password = document.getElementById("password").value;
-            localStorage.setItem("mail",username);
-            localStorage.setItem("password",password);
-            alert(localStorage.getItem("mail"));
-            alert(localStorage.getItem("password"));
-            window.location.href="index.html";
-        }
+<!DOCTYPE html>
+<html >
+    <head><title>RCSS</title>
+        <link rel="stylesheet" href="welcome.css">
+        <link type="text/css" 
+          rel="stylesheet" media="screen" href="https://assets.tumblr.com/assets/styles/global.css?_v=575a180469105f55c4d019c258cbec57">        
+        
+    <script type="text/javascript">
+        tumblr_custom_tracking_url  = '/verify/wwfsbdd';
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-97144-8']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_setDomainName', 'tumblr.com']);
+                    _gaq.push(['_trackPageview', '/verify/wwfsbdd']);
+                
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+        
     </script>
-<h1><B><center>Student's Registration Form</centre></B></h1><HR>
-<marquee bgcolor="powderorange"> Rajagiri Collage of Social Sciences, Kalamaserry | Rajagiri Collage of Social Sciences, Kalamaserry | Rajagiri Collage of Social Sciences, Kalamaserry | Rajagiri Collage of Social Sciences, Kalamaserry | Rajagiri Collage of Social Sciences, Kalamaserry </marquee>
-<BR>
-<BR>
-<BR>
-Student ID <input type="text"><br><BR>
-DOB <input type="date"><BR><BR>
-Mail ID <input type="email" id="mail"><BR><BR>
-Courses <select name="courses" id="courses">
-<option value="select">-Select-</option>
-<option value="ca">CA</option>
-<option value="acca">ACCA</option>
-<option value="cma">CMA</option>
-<option value="cpa">CPA</option>
-</select><BR><BR>
-Address <textarea></textarea><BR><BR>
-Phone Number <input type="number"><BR><BR>
-Gender <input type="radio" name="gender" value="male"> Male
-<input type="radio" name="gender" value="female"> Female<BR><BR>
-Create Password <input type="password" id="password"><BR><BR>
-Re type Password <input type="password"><BR><BR>
-<button onclick="savedata()">Submit</button>
-<button>Clear</button><BR><BR><BR><BR>
-<img src="logo-25.jpg" width=100>
-</head>
-</html>
 
 
 
